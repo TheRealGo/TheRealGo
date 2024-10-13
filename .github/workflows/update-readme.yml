@@ -4,11 +4,14 @@ on:
   issues:
     types: [opened, edited, deleted]
 
+permissions:
+  contents: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: チェックアウトリポジトリ
+      - name: リポジトリをチェックアウト
         uses: actions/checkout@v3
 
       - name: 最新のIssuesを取得
@@ -17,6 +20,7 @@ jobs:
         with:
           result-encoding: string
           script: |
+            const core = require('@actions/core');
             const issues = await github.paginate(
               github.rest.issues.listForRepo, 
               {
@@ -28,15 +32,15 @@ jobs:
               }
             );
             const tweets = issues.map(issue => `- ${issue.title}`).join('\n');
-            return tweets;
+            core.setOutput('tweets', tweets);
 
       - name: READMEを更新
         run: |
-          echo "# プロフィール\n\n## 最新のつぶやき\n\n${{ steps.get_issues.outputs.result }}" > README.md
+          echo "# プロフィール\n\n## 最新のつぶやき\n\n${{ steps.get_issues.outputs.tweets }}" > README.md
 
       - name: 変更をコミット
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Update README with latest tweets"
           file_pattern: README.md
-          token: ${{ secrets.ACTIONS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
