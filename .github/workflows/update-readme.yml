@@ -18,7 +18,7 @@ jobs:
           result-encoding: string
           script: |
             const issues = await github.paginate(
-              github.rest.issues.listForRepo,
+              github.rest.issues.listForRepo, 
               {
                 owner: context.repo.owner,
                 repo: context.repo.repo,
@@ -39,3 +39,4 @@ jobs:
         with:
           commit_message: "Update README with latest tweets"
           file_pattern: README.md
+          token: ${{ secrets.ACTIONS_TOKEN }}
