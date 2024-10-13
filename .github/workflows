@@ -1,0 +1,41 @@
+name: Update README with latest tweets
+
+on:
+  issues:
+    types: [opened, edited, deleted]
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: チェックアウトリポジトリ
+        uses: actions/checkout@v3
+
+      - name: 最新のIssuesを取得
+        id: get_issues
+        uses: actions/github-script@v6
+        with:
+          result-encoding: string
+          script: |
+            const issues = await github.paginate(
+              github.rest.issues.listForRepo,
+              {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'open',
+                sort: 'created',
+                direction: 'desc'
+              }
+            );
+            const tweets = issues.map(issue => `- ${issue.title}`).join('\n');
+            return tweets;
+
+      - name: READMEを更新
+        run: |
+          echo "# プロフィール\n\n## 最新のつぶやき\n\n${{ steps.get_issues.outputs.result }}" > README.md
+
+      - name: 変更をコミット
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update README with latest tweets"
+          file_pattern: README.md
