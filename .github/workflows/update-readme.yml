@@ -14,13 +14,11 @@ jobs:
       - name: リポジトリをチェックアウト
         uses: actions/checkout@v3
 
-      - name: 最新のIssuesを取得
-        id: get_issues
+      - name: 最新のIssuesを取得してREADMEを更新
         uses: actions/github-script@v6
         with:
-          result-encoding: string
           script: |
-            const core = require('@actions/core');
+            const fs = require('fs');
             const issues = await github.paginate(
               github.rest.issues.listForRepo, 
               {
@@ -31,16 +29,14 @@ jobs:
                 direction: 'desc'
               }
             );
-            const tweets = issues.map(issue => `- ${issue.title}`).join('\n');
-            core.setOutput('tweets', tweets);
-
-      - name: READMEを更新
-        run: |
-          echo "# プロフィール\n\n## 最新のつぶやき\n\n${{ steps.get_issues.outputs.tweets }}" > README.md
+            const filteredIssues = issues.filter(issue => !issue.pull_request);
+            const tweets = filteredIssues.map(issue => `- ${issue.title}`).join('\n');
+            const readmeContent = `# プロフィール\n\n## 最新のつぶやき\n\n${tweets}`;
+            fs.writeFileSync('README.md', readmeContent);
 
       - name: 変更をコミット
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update README with latest tweets"
           file_pattern: README.md
-          token: ${{ secrets.GITHUB_TOKEN }}
+          github.token: ${{ secrets.GITHUB_TOKEN }}
