@@ -4,6 +4,9 @@
   <img src="https://github-readme-stats.vercel.app/api?username=TheRealGo&show_icons=true" alt="TheRealGo Github Stats"></img>
 </p>
 
+[![trophy](https://github-profile-trophy.vercel.app/?username=TheRealGo&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+
+
 <!--
 **TheRealGo/TheRealGo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
