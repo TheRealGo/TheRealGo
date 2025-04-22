@@ -7,7 +7,7 @@
 🚀 I take pride in building with purpose and precision — and yes, I aim to be the best.<br>
 　　Not out of arrogance, but out of relentless curiosity and ambition.<br>
 <div style="text-align: center;">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjI1ZDcydTRxb3M4YnZ4Nmx2NnZjaTZoM2lwZ3N4dWJqcnRpejBldiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/C1dmtEuMtJqMg/giphy.gif" width="320" alt="Shldon Cooper"/>
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjI1ZDcydTRxb3M4YnZ4Nmx2NnZjaTZoM2lwZ3N4dWJqcnRpejBldiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/C1dmtEuMtJqMg/giphy.gif" width="320" alt="Sheldon Lee Cooper"/>
 </div>
 
 ---
