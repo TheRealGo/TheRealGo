@@ -4,7 +4,7 @@
   <img src="https://github-readme-stats.vercel.app/api?username=TheRealGo&show_icons=true" alt="TheRealGo Github Stats"></img>
 </p>
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=TheRealGo)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=TheRealGo&columns=4)](https://github.com/ryo-ma/github-profile-trophy)
 
 
 <!--
