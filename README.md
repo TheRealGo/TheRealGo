@@ -1,32 +1,69 @@
-# hello, world
+# TheRealGo
 
-🐥 I'm a beginner programmer.<br>
-⏳ Trying to make the world better with time series data.<br>
-🧠 Usually studying deep learning and algorithms.<br>
-🤖 As for languages, really into Rust and Python.<br>
-🚀 I take pride in building with purpose and precision — and yes, I aim to be the best.<br>
-　　Not out of arrogance, but out of relentless curiosity and ambition.<br>
-<p align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjI1ZDcydTRxb3M4YnZ4Nmx2NnZjaTZoM2lwZ3N4dWJqcnRpejBldiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/C1dmtEuMtJqMg/giphy.gif" width="320" alt="Sheldon Lee Cooper"/>
-</p>
+```txt
+┌──────────────────────────────────────────────────────────────┐
+│  AI engineering / Rust / Python / time-series intelligence    │
+│  building precise systems with speed, taste, and intent       │
+└──────────────────────────────────────────────────────────────┘
+```
+
+I build software where **machine learning**, **automation**, and **systems engineering** intersect.
+My current focus is turning complex ideas into compact, reliable tools — especially around AI agents,
+time-series data, developer workflows, and practical automation.
+
+I am not optimizing for noise. I am optimizing for leverage.
 
 ---
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=TheRealGo&layout=compact)
-![GitHub Readme Stats](https://github-readme-stats.vercel.app/api?username=TheRealGo&show_icons=true)<br>
-![GitHub Profile Trophy](https://github-profile-trophy.vercel.app/?username=TheRealGo)<br>
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=TheRealGo.TheRealGo)
 
-<!--
-**TheRealGo/TheRealGo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Core stack
 
-Here are some ideas to get you started:
+| Area | Tools / interests |
+|---|---|
+| Languages | Rust, Python, TypeScript, shell |
+| AI / ML | deep learning, LLM tooling, agents, time-series modeling |
+| Systems | CLI tools, automation, Nix, reproducible environments |
+| Algorithms | competitive programming, data structures, performance-aware design |
+| Product style | small surface area, sharp UX, maintainable internals |
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## Selected repositories
+
+| Repository | Focus |
+|---|---|
+| [`AtCoder`](https://github.com/TheRealGo/AtCoder) | algorithm practice and competitive programming notes |
+| [`db-auto-pilot`](https://github.com/TheRealGo/db-auto-pilot) | database-oriented automation experiments |
+| [`CogniSync-Readiness`](https://github.com/TheRealGo/CogniSync-Readiness) | AI readiness / cognitive workflow exploration |
+| [`slack-auto-status-rs`](https://github.com/TheRealGo/slack-auto-status-rs) | Rust-based Slack status automation |
+| [`my-nix-flakes`](https://github.com/TheRealGo/my-nix-flakes) | reproducible development environment setup |
+
+---
+
+## Operating principles
+
+```txt
+clarity over complexity
+precision over performance theater
+shipping over collecting ideas
+deep work over shallow output
+```
+
+I like tools that are boring on the outside and sharp on the inside: predictable interfaces,
+small abstractions, strong defaults, and code that does not require a ritual to understand.
+
+---
+
+## Current direction
+
+- Building AI-assisted workflows that reduce operational friction.
+- Studying deep learning, algorithms, and practical agent architectures.
+- Writing more Rust and Python for tools that should be fast, reliable, and easy to reason about.
+- Turning experiments into reusable systems instead of one-off scripts.
+
+---
+
+```txt
+> build with purpose
+> learn without ego
+> keep the edge
+```
